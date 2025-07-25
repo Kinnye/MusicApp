@@ -1,0 +1,87 @@
+.intro-page {
+  height: 100%;
+  background-color: #ffffff; // ← fondo blanco  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-skip {
+  justify-content: flex-end;
+  padding: 12px 16px;
+}
+
+.intro-skip-link {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.intro-img-wrapper {
+  width: 100%;
+  max-height: 320px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-img {
+  width: auto;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.intro-text h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.intro-footer {
+  padding: 24px;
+  text-align: center;
+}
+
+.intro-btn {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 80%;
+  margin-bottom: 16px;
+}
+
+.custom-swiper-pagination {
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+  opacity: 0.3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6b6b;
+  opacity: 1;
+}

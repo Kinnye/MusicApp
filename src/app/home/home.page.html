@@ -1,0 +1,65 @@
+<ion-header class="main-header">
+  <ion-toolbar>
+    <ion-title class="title-center">🎶 Tu Música</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [ngStyle]="{'--background': colorFondo}" class="main-content">
+  <section class="carousel-section">
+    <h2 class="section-title">Álbumes Populares</h2>
+    <swiper-container pagination="true" loop="true" slides-per-view="auto">
+      <swiper-slide *ngFor="let album of albums" (click)="showSongs(album.id)">
+        <ion-card [ngStyle]="{ 'background': colorCard, 'color': colorTexto, 'border': '2px solid ' + colorTitulo }" class="album-card">
+          <img [src]="album.image" />
+          <ion-card-header>
+            <ion-card-title [style.color]="colorTitulo">{{ album.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+  </section>
+
+
+  <section class="carousel-section">
+    <h2 class="section-title">Artistas Destacados</h2>
+    <swiper-container pagination="true" loop="true" slides-per-view="auto">
+      <swiper-slide *ngFor="let artist of artists" (click)="showSongsByArtist(artist.id)">
+        <ion-card [ngStyle]="{ 'background': colorCard, 'color': colorTexto, 'border': '2px solid ' + colorTitulo }" class="artist-card">
+          <img [src]="artist.image" />
+          <ion-card-header>
+            <ion-card-title [style.color]="colorTitulo">{{ artist.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+  </section>
+
+</ion-content>
+
+<ion-footer class="player-footer">
+  <ion-grid>
+    <ion-row class="player-time-row">
+      <ion-col>{{ formatTime(currentSong?.currentTime) || "0:00" }}</ion-col>
+      <ion-col class="ion-text-end">{{ formatTime(getRemainingTime()) || "0:00" }}</ion-col>
+    </ion-row>
+    <ion-progress-bar [value]="newTime" color="tertiary"></ion-progress-bar>
+    <ion-row class="player-controls">
+      <ion-col size="1">
+        <ion-icon [color]="song.liked ? 'danger' : 'medium'" name="heart" (click)="toggleLike()"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-text>{{ song.name || "N/A" }}</ion-text>
+      </ion-col>
+      <ion-col size="1">
+        <ion-icon name="play" *ngIf="!song.playing" (click)="play()"></ion-icon>
+        <ion-icon name="pause" *ngIf="song.playing" (click)="pause()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-text color="danger" *ngIf="!song?.name"><h2>No hay canción activada</h2></ion-text>
+  <ion-text color="success" *ngIf="song?.name"><h2>{{ song.name }}</h2></ion-text>
+</ion-footer>

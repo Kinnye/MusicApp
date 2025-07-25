@@ -1,0 +1,101 @@
+.register-page {
+  height: 100%;
+  background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 360px;
+  background: #FFF3E0;
+  padding: 40px 24px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.register-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #FFF3E0;
+}
+
+.register-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #661505;
+}
+
+.register-subtitle {
+  font-size: 14px;
+  color: #5C5248;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  --background: #EFE2D0;
+  --border-radius: 10px;
+  margin-bottom: 16px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+  --highlight-height: 1px;
+}
+
+.custom-label {
+  color: #5C5248 !important; 
+  transition: color 0.3s ease;
+}
+
+.input-group.item-has-focus .custom-label,
+.input-group.item-has-value .custom-label {
+  color: #C7A63B !important;
+}
+
+ion-input {
+  color: #111;
+  font-size: 15px;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #e74c3c;
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-left: 6px;
+}
+
+.register-btn {
+  --background: #c7a63b;
+  --color: #ffffff;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.register-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #5C5248;
+}
+
+.register-link {
+  margin-left: 6px;
+  color: #661505;
+  font-weight: bold;
+  cursor: pointer;
+}
