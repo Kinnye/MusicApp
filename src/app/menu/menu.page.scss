@@ -2,10 +2,13 @@
   --background: #121212;
 }
 
-.custom-menu {
+.ion-menu.custom-menu {
   --width: 280px;
-  --background: linear-gradient(to right, #1f1c2c, #ff2d55);
+  --background: transparent;
+  --ion-background-color: transparent;
   color: #fff;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 .menu-header {
@@ -17,7 +20,7 @@
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 0 4px #ff2d55;
+  text-shadow: 0 0 4px #380c03;
 }
 
 .close-icon {
@@ -25,17 +28,24 @@
   color: #ffffff;
 }
 
+.list {
+  background: transparent;
+
+}
+
+
 .menu-content {
+   --background: linear-gradient(to right, #380c03); 
   padding: 20px 16px;
 }
 
 .menu-item {
-  --background: transparent;
-  color: #ffffff;
+  --background: #FFF3E0;
+  color: #380c03;
   border-radius: 12px;
   margin-bottom: 12px;
-  box-shadow: 0 4px 8px rgba(255, 45, 85, 0.3);
-  transition: transform 0.3s ease;
+
+
 }
 
 .menu-item:hover {
@@ -43,7 +53,7 @@
 }
 
 .item-icon {
-  color: #ff2d55;
+  color: #380c03;
   font-size: 22px;
   margin-right: 12px;
 }
@@ -52,3 +62,6 @@ ion-label {
   font-size: 16px;
   font-weight: 600;
 }
+
+
+

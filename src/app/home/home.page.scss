@@ -13,13 +13,20 @@
   transition: transform 0.4s ease;
   text-align: center;
   overflow: hidden;
-  border: 3px solid #380c03; // línea roja decorativa
+  border: 3px solid #380c03; 
   
 }
 
+.fondo{
+   --background: linear-gradient(to right, #380c03); 
+  padding: 20px 16px;
+}
+
+
+
 .slide-card:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 28px #380c03; // brilla más al hover
+  box-shadow: 0 0 28px #380c03; 
 }
 
 .slide-card img {

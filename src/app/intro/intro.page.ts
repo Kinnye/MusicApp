@@ -24,24 +24,19 @@ export class IntroPage implements OnInit {
   {
     title: 'Haz de tu fiesta un show inolvidable',
     description: 'Transforma cada celebración en una experiencia única con músicos que harán vibrar a todos tus invitados. ¡Nada de playlists aburridas! Trae música en vivo, talento local y energía real a tu celebración.',
-    image: 'assets/images/music1.jpg'
+    image: 'assets/images/slider1.jpg'
   },
   {
-    title: 'La forma más rápida de contratar artistas increíbles',
-    description: 'Encuentra la opción perfecta para hacer de tu evento algo inolvidable.',
-    image: 'assets/images/music2.jpg'
+    title: 'Apoya el talento local mientras creas momentos únicos',
+    description: 'Descubre el poder de la música hecha cerca de ti. Cada nota, cada letra y cada ritmo esconde historias reales de artistas que sueñan con llegar lejos.',
+    image: 'assets/images/slider2.jpg'
   },
   {
-    title: 'Contrata profesionales top para tu próximo evento',
-    description: 'Haz que tu celebración se destaque con músicos verdaderamente talentosos.',
-    image: 'assets/images/music3.jpeg'
+    title: 'La música une, y nosotros hacemos que eso ocurra.',
+    description: 'Descubre una experiencia musical pensada para conectar. En nuestra app, cada nota, playlist y artista tiene el poder de unir emociones, recuerdos y personas. Explora géneros, apoya a talentos emergentes y crea la banda sonora de tu día a día.',
+    image: 'assets/images/slider3.jpg'
   },
 
-  {
-    title: 'La forma más rápida de contratar artistas increíbles',
-    description: 'Encuentra la opción perfecta para hacer de tu evento algo inolvidable.',
-    image: 'assets/images/music2.jpg'
-  },
 ];
 
 

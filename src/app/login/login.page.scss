@@ -1,6 +1,6 @@
 .login-page {
   height: 100%;
-  background: linear-gradient(to bottom, #661505, #661505);
+  background: linear-gradient(to bottom, #380c03, #380c03);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .login-title {
-    color: #661505;
+    color: #380c03;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 4px;
@@ -89,7 +89,7 @@ ion-input {
 
 .login-link {
   margin-left: 6px;
-  color: #661505;
+  color: #380c03;
   font-weight: bold;
   cursor: pointer;
 }
